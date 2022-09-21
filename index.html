@@ -26,18 +26,33 @@
 
 <body>
   <main>
-    <div class="coming-soon">
-      <img src="./images/logo.svg">
-      <h2><span class="accent">We're</span> coming soon</h2>
 
-      <p>Hello fellow shoppers! We're currently building our new fashion store.
-      Add your email below to stay up-to-date with announcements and our launch deals.</p>
+    <article class="coming-soon">
+      <div>
+        <img src="./images/logo.svg">
+      </div>
+      <div class="cta">
+        <h2><span style="color: hsl(0, 36%, 70%); font-weight: 300;">We're</span> coming soon</h2>
 
-      Email Address
-    </div>
-    <div class="portrait-photo">
-      <img src="./images/hero-desktop.jpg">
-    </div>
+        <p>Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our launch deals.</p>
+        <form autocomplete="off">
+          <div>
+            <input type="email" name="email" id="email" placeholder="Email Address" required>
+            <label for="email">
+              <img src="./images/icon-error.svg">
+            </label>
+            <button type="submit"><img src="./images/icon-arrow.svg"></button>
+          </div>
+          <p class="error">Please porvide a valid email</p>
+        </form>
+      </div>
+    </article>
+
+    <article class="portrait-photo">
+      <source media="(min-width: 768px)" srcset="./images/hero-desktop.jpg">
+      <img src="./images/hero-mobile.jpg" alt="">
+    </article>
   </main>
 
   <footer>

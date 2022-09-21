@@ -34,6 +34,11 @@ main {
     height: 100vh;
 }
 
+body {
+  font-family: var(--josefin);
+  font-size: var(--font-size);
+}
+
 .coming-soon {
     width: 100%;
     padding: 3% 20%;
@@ -47,10 +52,22 @@ main {
     flex-basis: 100%;
 }
 
+img {
+  max-width: 100%;
+}
+
 .portrait-photo img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+  height: 100%;
+  width: 100%;
+  object-fit:cover;
+}
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 2rem;
+  margin-top: 14rem;
 }
 
 h2 {
@@ -59,11 +76,73 @@ h2 {
     font-weight: var(--font-weight-medium);
     font-size: 3.5rem;
     letter-spacing: 1.5rem;
+    line-height: normal;
 }
 
-.accent {
-    color: var(--font-weight-light) !important;
+p {
+  color: var(--desaturtated-red);
 }
+
+form {
+  position: relative;
+}
+
+form input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border-radius: 45px;
+  border: 0.5px hsl(0, 36%, 70%) solid;
+  font-family: var(--josefin);
+  color: hsl(0, 36%, 70%);
+
+}
+
+form input::placeholder {
+  color: hsl(0, 36%, 70%);
+  opacity: 0.5;
+  padding: 1rem;
+  padding-left: 1em;
+  font-family: var(--josefin);
+  font-weight: var(--font-weight-medium);
+}
+
+form button {
+  position: absolute;
+  top: 6.5%;
+  right: 0;
+  transform: translateY(-12%);
+  background: linear-gradient(135deg,hsl(0, 80%, 86%), hsl(0, 74%, 74%)); 
+  border: none;
+  padding: 1rem 2.3rem;
+  border-radius: 45px;
+  cursor: pointer;
+  transition: 0.3s
+}
+
+form button:hover {
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 80%, 86%)); 
+}
+
+form label {
+  position: absolute;
+  display: block;
+  top: 15%;
+  right: 30%;
+}
+.error {
+  margin: 10px;
+  text-align: center;
+}
+
+@media (min-width: 738px) {
+  body {
+    background-image: url(./images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
 
 
 
