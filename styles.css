@@ -116,7 +116,9 @@ form button {
   padding: 1rem 2.3rem;
   border-radius: 45px;
   cursor: pointer;
-  transition: 0.3s
+  transition: 0.3s;
+  box-shadow: 5px 17px 31px -15px rgba(222,183,183,1)
+
 }
 
 form button:hover {
@@ -130,8 +132,7 @@ form label {
   right: 30%;
 }
 .error {
-  margin: 10px;
-  text-align: center;
+  margin: 10px 30px;
 }
 
 @media (min-width: 738px) {
